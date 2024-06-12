@@ -10,13 +10,20 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-image: url('https://w.wallhaven.cc/full/2y/wallhaven-2ywd3y.png'); /* 添加背景图像 */
+            background-size: cover; /* 让背景图像铺满整个页面 */
+            background-position: center; /* 居中背景图像 */
+            background-repeat: no-repeat; /* 禁止背景图像重复 */
+            height: 100vh; /* 让背景图像填满整个视窗高度 */
+            display: flex; /* 使用flexbox布局 */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
         }
 
         .container {
             max-width: 500px;
-            margin: 100px auto; /* 调整登录表单在页面中的位置 */
-            background-color: #ffffff;
+            width: 100%; /* 确保容器在小屏幕上也能正常显示 */
+            background-color: rgba(255, 255, 255, 0.8); /* 使用透明度，使背景图像透过来 */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,21 +46,23 @@
 
         input[type="text"],
         input[type="password"] {
-            width: 95%;
+            width: 100%; /* 使用100%宽度确保输入框对齐 */
             padding: 10px;
             margin-bottom: 20px;
             border: 1px solid #cccccc;
             border-radius: 4px;
+            box-sizing: border-box; /* 确保padding不会影响宽度计算 */
         }
 
         button {
-            width: 99%;
+            width: 100%; /* 使用100%宽度确保按钮对齐 */
             padding: 10px;
             background-color: #007bff;
             color: #ffffff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            box-sizing: border-box; /* 确保padding不会影响宽度计算 */
         }
 
         button:hover {
